@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&family=Tinos&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Tinos', serif;
+}
+h1, b{
+    font-family: 'Playfair Display', serif;
+}
+
+
+h2{
+    font-family: 'Tinos', serif;
+}
+
+header{
+    padding: 0 60px;
+    height: auto;
+    /* align-content: center; */
+    background-image: url(./assets/homeheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+header  h1, h2, a{
+    color : whitesmoke
+}
+
+header h2{
+    font-size: 30px;
+}
+
+header h1{
+
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+
+
+
+header ul li{
+    display: inline-block;
+}
+
+
+header ul li a{
+    width: fit-content;
+    padding: 15px;
+    display: inline-block ;
+}
+
+header ul li a:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.header-logo a{
+    font-family: 'Lobster', cursive;
+}
+
+.header-container{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* HOME */
+
+.header-content{
+    /* align-items: center;
+    align-self: center;
+    align-content: center; */
+    /* width: 100px; */
+    text-align: center;
+    margin-top: 200px;
+    font-size: 35px;
+    
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.home-header{
+    height: 768px;
+}
+
+.home-section{
+    background-color: whitesmoke;
+    height: 600px;
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 180px;
+    align-items: center;
+}
+
+.home-container img{
+    width: 200px;
+    height: 200px;
+}
+
+#btn-content{
+    width: 350px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #1a3457;
+    border-radius: 15px
+}
+
+/* ENCYCLOPEDIA */
+
+
+.en-section{
+    height: auto;
+    display: flex ;
+}
+
+.jump-container{
+    width: 15%;
+    border-right: 2px solid rgb(151, 148, 148);
+    /* padding-bottom: 20px; */
+    /* display: flex; */
+}
+
+.jump-container > div{
+    padding-left: 30px;
+    width: 80%;
+    flex-direction: column;
+    
+}
+.jump-container input[type = search]{
+    /* width: 260px; */
+    margin-top: 50px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 19px;
+    font-size: 16px;
+    background-color: #E8E8E8;
+    background-image: url(./assets/search-icon1.svg);
+    background-position: 10px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 60px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.jump-container input[type = search]:focus {
+    background-image: none;
+    padding: 12px 20px 12px 30px;
+    
+}
+
+.jump-container a{
+    color : black;
+    text-decoration: underline;
+    line-height: 25px;
+}
+
+
+.en-content{
+    padding: 50px 60px 0 80px;
+    /* background-color: aqua; */
+    width: 85%;
+    padding-bottom: 40px;
+}
+
+.en-content img{
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+    /* object-position: left; */
+    cursor: pointer;
+}
+
+.en-content img:hover{
+    filter: brightness(30%);
+    position: relative;
+}
+
+
+/* FORM */
+
+.daftar h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+    padding-top: 6rem;
+    font-family: 'Tinos', serif;
+    color: black;
+    
+}
+
+.daftar h3{
+    text-align: center;
+    font-size: 93%;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.daftar p{
+    padding: 15px;
+    text-align: center;
+}
+
+.icon{
+    text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+    letter-spacing: 10px;
+    margin-left: 2px;
+}
+
+input,
+textarea{
+    background-color: #E8E8E8;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 12px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+form{
+    text-align: center;
+    width: auto;
+    height: 500px;
+    padding-top: 2rem;
+    padding-bottom: 100px;
+    /* margin-left: 19vw; */
+
+}
+
+button{
+    border-radius: 20px;
+    border: 1px solid #E8E8E8;
+    background-color: #E8E8E8;
+    color: black;
+    font-size: 10px;
+    font-weight: lighter;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+li{
+    display: inline-block;
+    align-items: center;
+}
+
+.form-container{
+    padding: 0 400px;
+}
+
+
+/* ABOUT US */
+
+.about{
+    text-align: center;
+    height: 500px;
+    padding: 80px 300px 50px 300px;
+}
+
+.about h1{
+    padding: 30px 0 10px 0;
+}
+
+.about h3{
+    padding-top: 60px;
+    padding-bottom: 5px;
+    font-size: 95%;
+}
+
+.about p{
+    align-items: center;
+    padding-top: 5px;
+    font-family: 'Tinos', serif;
+}
+
+.p2{
+    padding-top: 25px;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-image: url(./assets/homeheader.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding: 0 60px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: top;
+    font-size: 90%;
+    flex-direction: column;
+    color : whitesmoke;
+}
+
+.footer-wrapper{
+    height : 200px;
+    display: flex;
+    gap: 80px;
+    padding : 30px 0px;
+    justify-content: space-between;
+}
+
+
+.footer-menu{
+    display: flex;
+    gap: 100px;
+    /* justify-content: space-between; */
+}
+
+.footer-menu p{
+    padding-top: 13px;
+}
+
+.footer-menu > div > a{
+    line-height: 30px;
+
+}
+
+ .footer-icon{
+    display: flex;
+    gap : 20px;
+    padding-top: 13px;
+}
+
+footer h1{
+    font-size: 40px;
+    margin : 0;
+ }
+
+footer h2{
+    font-size: 20px;
+    margin : 0;
+    padding-top: 10px;
+ }
+
+.footer-icon p{
+    padding: 3px;
+}
+
+.site-footer{
+    float: left;
+    font-size:15px;
+    color:#737373;
+}
+
+.site-footer a{
+    font-weight: bolder;
+    color:#737373
+}
+
